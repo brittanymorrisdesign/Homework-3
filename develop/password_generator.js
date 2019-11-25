@@ -11,13 +11,10 @@ function generate("length") {
 
     //create for loop to choose characters//
     for(var i = 0); i < length; i = i +1);
-    var char = math.floor(math.random() * all.length);
-
-userAnswer + prompt("How many characters would you like your password to contain?");
-console.log (userAnswer);
+    password = password + all.charAt(Math.floor(Math.random() * Math.floor(all.length - 1)));
 
 //Add password to text box//
-document.getElementById("generate").value = pasv
+document.getElementById("generate").all = password
 
 
 }
