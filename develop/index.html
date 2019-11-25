@@ -20,16 +20,10 @@
       <h5 class="card-title">Generate a Password</h5>
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
       <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
-      <br><button id="generate" on click="generate()" class="btn btn-primary">Generate Password</button>
+      <br><button id="generate" class="btn btn-primary">Generate Password</button>
       <button id="copy" class="btn btn-primary">Copy to Clipboard</button></br>
-      <input type="range" min="7" max="127">
     </div>
   </div>
-
-  <script>
-    userAnswer = prompt("How many characters would you like your password to contain?");
-    console.log(userAnswer);
-  </script>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -41,7 +35,7 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
   </script>
-  <script src="/develop/password_generator.js"></script>
+  <script src="password_generator.js"></script>
 </body>
 
 </html>
