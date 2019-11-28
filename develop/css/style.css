@@ -1,39 +1,82 @@
 /* Password Generator */
+@import url('https://fonts.googleapis.com/css?family=Tajawal&display=swap');
+
 * {
   box-sizing: border-box;
+}
+
+.card-header {
+  text-align: 0 auto;
+  background-color: #007bff;
+  color: white;
+  padding-top: 20px;
+}
+
+.card {
+  margin: auto;
+  max-width: 600px;
+  margin-top: 35px;
 }
 
 body {
   padding: 0;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  min-height: 100vh;
+  color: #939497;
+  align-items: center;
+  padding: 10px;
+  font-family: 'Tajawal', sans-serif;
   font-size: 18px;
   line-height: 150%;
-  color: #777777;
+  min-height: 100vh;
   background-image: url("../images/email-pattern.png");
 }
 
-.password-text {
-  width: 200px;
-  height: 35px;
+h2 {
   text-align: center;
+  padding-top: 10px;
 }
 
-.buttons {
-  padding: 35px;
-  width: 300px;
-  margin: 0 auto;
+.container {
+  padding: 20px;
 }
 
-.pw-generator-group {
+.userinput {
+  border: none;
+}
+
+.container-result {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.container-options {
+  margin-top: 10px;
+  line-height: 15px;
+}
+
+.btn-primary {
+  display: inline-block;
+  border: none;
+  display: flex; 
+  color: white;
+  padding-left:20px;
+  padding-right:20px;
+  padding-top:10px;
+  text-align: center;
+  text-decoration: none;
   display: inline-block;
 }
 
-#generate {
-padding: 10px;
+.card-footer {
+  background-color: #104682;
+  padding: 20px;
 }
 
-#copy {
-  padding: 10px;
-  margin: 5px;
+#generate {
+  font-size: 20px;
+  padding: 15px;
 }

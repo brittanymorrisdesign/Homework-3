@@ -35,25 +35,18 @@
         // display that in a text area
         // have a button that will copy to clipboard
 
-
-            const isLowercase = prompt('do you want lowercase');
-
-
-
-
-
-
-
 //generate random password//
 
 function generate() {
     var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
     var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
     var num = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-    var sym = [ "!", """, "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", "=", ">", "?", "@", "[", "\\", "]", "^", "_", "`", "{", "|", "}", "~"];
+    var sym = [ "!", "\"", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", "=", ">", "?", "@", "[", "\\", "]", "^", "_", "`", "{", "|", "}", "~"];
     
-    var userAnswer = prompt("How many characters would you like your password to contain?");
-        
+
+    function createpassword() {
+        var pwLength = parseInt(document.getElementbyId("userinput").value);
+    }
     // Length (must be between 8 and 128 characters)
     if (userAnswer >= 8 && userAnswer <= 128) {
     console.log("yes")
@@ -65,41 +58,7 @@ function generate() {
     generate()
 
 
-    var userAnswer = prompt("Would you like to have numeric characters?");
-    // Must have numeric characters
-    if (userAnswer   xxxxxxxxxx            ) {
-    console.log("yes") 
-    }   
-    else {
-        console.log("no")
-    }
-
-    generate()
-    
-  
-    var userAnswer = prompt("Would you like to include lowercase characters?");
-    // Must have Lowercase characters
-    if (userAnswer   xxxxxxxxxx            ) {
-    console.log("yes") 
-    }   
-    else {
-        console.log("no")
-    }
-
-    generate()
-    
-
-    var userAnswer = prompt("Would you like to include uppercase characters?");
-// Must have Uppercasse characters
-    if (userAnswer   xxxxxxxxxx            ) {
-    console.log("yes") 
-    }   
-    else {
-        console.log("no")
-    }
-
-    generate()
-
+   
     
     
 //     var password = " ";
