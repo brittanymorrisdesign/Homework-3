@@ -12,3 +12,28 @@ body {
   color: #777777;
   background-image: url("../images/email-pattern.png");
 }
+
+.password-text {
+  width: 200px;
+  height: 35px;
+  text-align: center;
+}
+
+.buttons {
+  padding: 35px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.pw-generator-group {
+  display: inline-block;
+}
+
+#generate {
+padding: 10px;
+}
+
+#copy {
+  padding: 10px;
+  margin: 5px;
+}
