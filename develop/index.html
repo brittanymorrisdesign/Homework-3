@@ -27,22 +27,22 @@
       <div class="container-options">
         <form action="/action_page.php">
           <div class="userinput">
-            <label for="userinput">Password Length: <input type="text" name="passwordlength" placeholder=""
+            <label for="userinput">Password Length: <input type="text" id="pwLength" name="passwordlength" placeholder=""
                 value=""><br></label>
             <br><text size="3px"><i>Must be between 8-128 characters</i></text><br>
           </div>
           <br><label for="uppercase"> Uppercase Characters</label>
-          <input type="checkbox" style="margin-left: 120px" ; name="uppercase" value="uppercase"><br>
+          <input type="checkbox" id="upperChar" style="margin-left: 120px" ; name="uppercase" value="uppercase"><br>
           <br><label for="lowercase"> Lowercase Characters</label>
-          <input type="checkbox" style="margin-left: 120px" ; name="lowercase" value="lowercase"> </br>
+          <input type="checkbox" id="lowerChar" style="margin-left: 120px" ; name="lowercase" value="lowercase"> </br>
           </br><label for="special"> Special Characters</label>
-          <input type="checkbox" style="margin-left: 145px" ; name="special" value="special">
+          <input type="checkbox" id="specialChar" style="margin-left: 145px" ; name="special" value="special">
         </form>
       </div>
     </div>
     <div class="card-footer">
       <div style="text-align:center;">
-        <button type="button" class="btn btn-primary">Generate</button>
+        <button type="button" id= "yourPw" class="btn btn-primary">Generate</button>
         <button type="button" class="btn btn-primary"><i class="far fa-clipboard"></i></button>
       </div>
     </div>

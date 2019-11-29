@@ -42,13 +42,86 @@ function generate() {
     var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
     var num = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
     var sym = [ "!", "\"", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", "=", ">", "?", "@", "[", "\\", "]", "^", "_", "`", "{", "|", "}", "~"];
-    
+   
+    var pwLength = document.getElementbyId("pwLengh");
+    var upperChar = document.getElementbyId("upperChar");
+    var lowerChar = document.getElementbyId("lowerChar");
+    var specialChar = document.getElementbyId("specialChar");
+
+
+    function generate() {
+        userPassword = " ";
+        passwordCharset = " ";
+
+        // Length (must be between 8 and 128 characters)
+        if (pwLength >= 8 && pwLength <= 128) {
+            passwordCharset += pwLength;
+        }
+        if (upperChar.checked) {
+            passwordCharset += upperChar;
+        }
+        if (lowerChar.checked) {
+            passwordCharset += lowerChar;
+        }
+        if (specialChar.checked) {
+            passwordCharset += sepcialChar;
+        }
+
+        pwLength = Number(lengthInput.value);
+
+for (let i = 0; i < pwLength; i = 1+1) {
+userPassword += passwordCharset.charAt(Math.floor(Math.random() * passwordCharset.length);
+
+}
+
+        var pwLength = parseInt(document.getElementbyId("userinput").value));
+    }
+
+
+
+  /* Copy Clipboard*/
+  
+  /* Get the text field */
+  var copyText = document.getElementById("myInput");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+}
+
+
+
+
+
+
+
+
+
+
+
+    submit.addEventListener("click"(function(e)) {
+
+        var characters = char;
+        (charNum.checked) ? characters += num: " ";
+        (upperChar.checked) ? characters += num: " ";
+        (lowerChar.checked) ? characters += num: " ";
+        (sepcialChar.checked) ? characters += num: " ";
+        yourPw.value = password (charNum.value, characters);
+  
+    });
+
 
     function createpassword() {
         var pwLength = parseInt(document.getElementbyId("userinput").value);
     }
-    // Length (must be between 8 and 128 characters)
-    if (userAnswer >= 8 && userAnswer <= 128) {
+
+
     console.log("yes")
     }
     else {
