@@ -18,34 +18,33 @@
     <h2 class="card-header">Password Generator</h2>
     <div class="container">
       <div class="container-result">
-              <!-- Where password is presented -->
+        <!-- Where password is presented -->
         <form action="/action_page2.php">
-          <textarea id="yourPw" style="width:100%" ; placeholder="Your Secure Password"
-            aria-label="Generated Password"></textarea>
+          <textarea id="password" style="width:100%" ; placeholder="Generated Password"
+          aria-label="password"></textarea>
         </form>
       </div>
 
       <div class="container-options">
         <form action="/action_page.php">
-          <div class="userinput">
-            <label for="pwLength">Password Length: <input type="text" id="pwLength" name="passwordlength" placeholder=""
-                value=""><br></label>
-            <br><text size="3px"><i>Must be between 8-128 characters</i></text><br>
-          </div>
-          <br><label for="uppercase"> Uppercase Characters</label>
-          <input type="checkbox" id="upperChar" style="margin-left: 120px" ; name="uppercase" value="uppercase"><br>
-          <br><label for="lowercase"> Lowercase Characters</label>
-          <input type="checkbox" id="lowerChar" style="margin-left: 120px" ; name="lowercase" value="lowercase"> </br>
-          </br><label for="special"> Special Characters</label>
-          <input type="checkbox" id="specialChar" style="margin-left: 145px" ; name="special" value="special">
+          <div class="userinput">Password Length:<input type="number" id="length" min="0" max="200" value="8"><br>
+        </div>
+          <br><label for="uppercase">Uppercase Characters</label>
+          <input type="checkbox" id="upperChar" style="margin-left: 120px"; name="upperChar" value="upperChar"><br>
+          <br><label for="uppercase">Lowercase Characters</label>
+          <input type="checkbox" id="lowerChar" style="margin-left: 120px"; name="lowerChar" value="lowerChar"><br>
+          <br><label for="numbers">Number Characters</label>
+          <input type="checkbox" id="numChar" style="margin-left: 138px"; name="numChar" value="numChar"></br>
+          </br><label for="special">Special Characters</label>
+          <input type="checkbox" id="specialChar" style="margin-left: 145px"; name="specialChar" value="specialChar">
         </form>
       </div>
     </div>
     <div class="card-footer">
       <div style="text-align:center;">
-        <button class="btn btn-primary" onclick="generate()">Generate</button>
+        <input type="button" button class="btn btn-primary" name="Generate" id="generate" value="Generate" onclick="generate();" /></button>
         <!-- The button used to copy the text -->
-        <button class="btn btn-primary" onclick="copyPassword()"></button><i class="far fa-clipboard"></i></button>
+        <button class="btn btn-primary" onclick="copyPassword()"><i class="far fa-clipboard"></i></button>
       </div>
     </div>
 
