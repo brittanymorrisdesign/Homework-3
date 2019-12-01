@@ -7,6 +7,7 @@ var sym = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/",
 
 
 function generate() {
+    //get password length
     var passwordLength = document.getElementById("length").value;
     var lowerChar = document.getElementById("lowerChar").checked;
     var upperChar = document.getElementById("upperChar").checked;
@@ -21,7 +22,7 @@ function generate() {
 
         document.getElementById('password').innerHTML = password;
     }
-    else {
+    else { // error message appears
         document.getElementById('password').innerHTML = "Password must contain 8-128 characters.";
     }
 }
@@ -30,23 +31,23 @@ function ChoosingChar(lowerChar, upperChar, numChar, specialChar) {
 
     var charChoice = " ";
     
-    if(lowerChar === true){
+    if(lowerChar === true) {
         charChoice = charChoice.concat(lowerCase);
     }
-    if(upperChar === true){
+    if(upperChar === true) {
         charChoice = charChoice.concat(upperCase);
     }
-    if(numChar === true){
+    if(numChar === true) {
         charChoice= charChoice.concat(num);
     }
-    if(specialChar === true){
+    if(specialChar === true) {
         charChoice = charChoice.concat(sym);
     }
     character = charChoice.charAt(Math.floor((Math.random() * charChoice.length)));
     return character;
 }
 
- /* Copy Clipboard*/
+ /* Copy Clipboard */
  function copyPassword() {
   /* Get the text field */
   var copyText = document.getElementById("password");
