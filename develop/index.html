@@ -30,21 +30,23 @@
           <div class="userinput">Password Length:<input type="number" id="length" min="0" max="200" value="8"><br>
         </div>
           <br><label for="uppercase">Uppercase Characters</label>
-          <input type="checkbox" id="upperChar" style="margin-left: 120px"; name="upperChar" value="upperChar"><br>
+          <input type="checkbox" id="upperChar" style="margin-left: 120px" ; name="upperChar" value="upperChar"><br>
           <br><label for="uppercase">Lowercase Characters</label>
-          <input type="checkbox" id="lowerChar" style="margin-left: 120px"; name="lowerChar" value="lowerChar"><br>
+          <input type="checkbox" id="lowerChar" style="margin-left: 120px" ; name="lowerChar" value="lowerChar"><br>
           <br><label for="numbers">Number Characters</label>
-          <input type="checkbox" id="numChar" style="margin-left: 138px"; name="numChar" value="numChar"></br>
+          <input type="checkbox" id="numChar" style="margin-left: 138px" ; name="numChar" value="numChar"> </br>
           </br><label for="special">Special Characters</label>
-          <input type="checkbox" id="specialChar" style="margin-left: 145px"; name="specialChar" value="specialChar">
+          <input type="checkbox" id="specialChar" style="margin-left: 145px" ; name="specialChar" value="specialChar">
         </form>
       </div>
     </div>
     <div class="card-footer">
       <div style="text-align:center;">
-        <input type="button" button class="btn btn-primary" name="Generate" id="generate" value="Generate" onclick="generate();" /></button>
-        <!-- The button used to copy the text -->
-        <button class="btn btn-primary" onclick="copyPassword()"><i class="far fa-clipboard"></i></button>
+        <input type="button" button class="btn btn-primary" name="generate" id="generate" value="Generate" onclick="generate();" /></button>
+         <!-- The button used to copy the text -->
+
+         <button onclick="copyPassword()" button class="btn btn-primary" name="copy" id="copy"><i class="far fa-clipboard"></i></button>
+      
       </div>
     </div>
 
