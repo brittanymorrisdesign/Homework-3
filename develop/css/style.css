@@ -33,9 +33,16 @@ body {
   background-image: url("../images/email-pattern.png");
 }
 
-h2 {
+h1 {
   text-align: center;
   padding-top: 10px;
+  font-size: 30px;
+}
+
+h2 {
+  text-align: left;
+  font-size: 17px;
+  font-style: italic;
 }
 
 .container {
