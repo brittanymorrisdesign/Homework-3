@@ -20,7 +20,8 @@
       <div class="container-result">
         <!-- Where password is presented -->
         <form action="/action_page2.php">
-          <textarea id="password" style="width:100%" ; placeholder="Generated Password" aria-label="password"></textarea>
+          <textarea id="password" style="width:100%" ; placeholder="Generated Password"
+            aria-label="password"></textarea>
           <h2 class="parameters">Must be between 8 - 128 characters</h2>
         </form>
       </div>
@@ -28,7 +29,7 @@
       <div class="container-options">
         <form action="/action_page.php">
           <div class="userinput">Password Length:<input type="number" id="length" min="0" max="200" value="8"><br>
-        </div>
+          </div>
           <br><label for="uppercase">Uppercase Characters</label>
           <input type="checkbox" id="upperChar" style="margin-left: 120px" ; name="upperChar" value="upperChar"><br>
           <br><label for="uppercase">Lowercase Characters</label>
@@ -42,9 +43,10 @@
     </div>
     <div class="card-footer">
       <div style="text-align:center;">
-        <input type="button" button class="btn btn-primary" name="generate" id="generate" value="Generate" onclick="generate();" /></button>
-         <!-- The button used to copy the text -->
-         <button onclick="copyPassword()" button class="btn btn-primary" name="copy" id="copy"><i class="far fa-clipboard"></i></button>
+        <input type="button" button class="btn btn-primary" name="generate" id="generate" value="Generate"
+          onclick="generate();" /></button>
+        <!-- The button used to copy the text -->
+        <button onclick="copyPassword()" button class="btn btn-primary" name="copy" id="copy"><i class="far fa-clipboard"></i></button>
       </div>
     </div>
 
