@@ -1,6 +1,6 @@
 # Homework-3
 Password Generator </br>
-Github Page: https://brittanymorrisdesign.github.io/Homework-13 
+Github Page: https://brittanymorrisdesign.github.io/Homework-3 
 
 # Objective
 A password generator that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by JavaScript. </br>
